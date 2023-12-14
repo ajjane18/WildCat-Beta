@@ -20,6 +20,8 @@ public class GroundSpawner : MonoBehaviour
         playerControlsScript = GameObject.Find("Cat").GetComponent<PlayerControls>();
 
     }
+
+    //This method creates a spawn spot for the bin and the gecko
     void SpawnObstacle()
     {
         if(playerControlsScript.gameOver == false)

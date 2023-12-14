@@ -26,6 +26,7 @@ public class MovingLeft : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        //if object goes off the screen that is not the background, destroy it
         else if (transform.position.x < bound && gameObject.CompareTag("trash"))
         {
             Destroy(gameObject);

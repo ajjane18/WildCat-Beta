@@ -31,7 +31,7 @@ public class Particles : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
-        //If cat hits bin, cat gets destroyed
+        //If cat hits bin, cat gets destroyed, makes an explosion 
         if (collision.gameObject.CompareTag("bin"))
         {
             Destroy(gameObject);

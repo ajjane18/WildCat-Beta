@@ -21,6 +21,7 @@ public class ScoreBoard : MonoBehaviour
         }
     }
 
+    // Score updates 
     void Update()
     {
         ScoreText.text = " Score: " + Mathf.Round(score);
