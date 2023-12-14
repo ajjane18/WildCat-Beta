@@ -18,6 +18,8 @@ public class Spawner : MonoBehaviour
         playerControlsScript = GameObject.Find("Cat").GetComponent<PlayerControls>();
 
     }
+
+    
     void SpawnCoin()
     {
         if (playerControlsScript.gameOver == false)

@@ -381,7 +381,6 @@
 "Assets/Scripts/GroundSpawner.cs"
 "Assets/Scripts/MovingLeft.cs"
 "Assets/Scripts/MovingObstacles.cs"
-"Assets/Scripts/MovingRight.cs"
 "Assets/Scripts/Particles.cs"
 "Assets/Scripts/PlayerControls.cs"
 "Assets/Scripts/RepeatBackground.cs"

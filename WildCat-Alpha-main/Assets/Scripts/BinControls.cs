@@ -22,7 +22,7 @@ public class BinControls : MonoBehaviour
     {
       if(Time.time >= nextShootTime)
         {
-            // Shoot item
+            // Shoot item, shoots trash (milk)
             ShootItem();
 
             //set the next shoot time
@@ -31,7 +31,8 @@ public class BinControls : MonoBehaviour
     }
      void ShootItem()
     {
-        // Instantiate the item at the shooter's position
+        // Instantiate the item at the shooter's position,
+        // creating the item defining the shooters position
         Instantiate(trashPrefab, transform.position, Quaternion.identity);
     }
 

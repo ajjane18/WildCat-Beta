@@ -16,14 +16,20 @@ public class PlayerControls : MonoBehaviour
     public bool isGameOver;
     public GameObject particleF;
     public GameObject particleE;
-
-
+    // created variables for jump ,playeraudio ,coin and background
+    public AudioClip jump;
+    public AudioSource playerAudio;
+    public AudioClip coin;
+ 
+    public AudioClip background;
     void Start()
     {
         //Getting the components physics and animations
         cat = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifer;
         animator = GetComponent<Animator>();
+        //added a audio source at the start , gets the component
+        playerAudio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -35,6 +41,8 @@ public class PlayerControls : MonoBehaviour
             cat.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
             animator.SetBool("IsJumping", true);
+            //plays the sound for each variable i declared at the start 
+            playerAudio.PlayOneShot(jump);
         }
 
         //Otherwise.. cat is on the ground running at default
@@ -82,6 +90,8 @@ public class PlayerControls : MonoBehaviour
             Debug.Log("MEOW~");
             PowerUp();
             ScoreBoard.score += 1;
+            //plays the coin sound for when the cat grabs coin
+            playerAudio.PlayOneShot(coin);
         }
 
         else if (collision.gameObject.CompareTag("gekko"))
