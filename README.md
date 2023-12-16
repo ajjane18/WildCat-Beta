@@ -90,5 +90,7 @@ References:
 
 Blender FBX to Unity - [https://youtu.be/ysl0qYq5p9w?si=P8_JF3coeyGN6iTG](https://www.youtube.com/watch?v=ysl0qYq5p9w)https://www.youtube.com/watch?v=ysl0qYq5p9w
 
+How I, Maria, fixed the 'Not a memeber' error. - https://youtu.be/Veh5OWMFlnw?si=4I39xH_Y9OT0Uz66
+
 
 
