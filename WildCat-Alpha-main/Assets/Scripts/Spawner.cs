@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
 
     }
 
-    //Fish coin spawns on co-ordinates
+    //Fish coin spawns on the provided co-ordinates
     void SpawnCoin()
     {
         if (playerControlsScript.gameOver == false)

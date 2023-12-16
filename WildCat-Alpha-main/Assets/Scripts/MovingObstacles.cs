@@ -12,7 +12,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Getting the components from ref script
+        //Getting the components from referred script called Playercontrols
         catControls = GameObject.Find("Cat").GetComponent<PlayerControls>();
 
     }
@@ -20,7 +20,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //When game is not over
+        //When game is not over 
         if(catControls.gameOver == false) 
         {
             transform.Translate(Vector3.right * Time.deltaTime * speed);

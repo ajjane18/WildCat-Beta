@@ -12,5 +12,4 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadScene(menu);
     }
-
 }

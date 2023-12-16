@@ -16,7 +16,7 @@ public class MovingLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if the game is not over it should move to the left continuously
+        //if the game is not over the cat should move to the left continuously
         if (!catControls.gameOver)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);

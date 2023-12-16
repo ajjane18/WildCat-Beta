@@ -111,6 +111,8 @@ public class PlayerControls : MonoBehaviour
             SceneManager.LoadScene("GameOver");
             Explosion();
         }
+
+
     }
 
 }
